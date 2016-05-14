@@ -14,7 +14,9 @@ u run your function with this attributes - layer object, center X of circle, cir
 https://www.google.com/design/spec/motion/material-motion.html
 
 
-```arcMovement.moveWithArc layerA, layerA.x, layerA.y, pos.x, pos.y```
+```
+arcMovement.moveWithArc layerA, layerA.x, layerA.y, pos.x, pos.y
+```
 
 function attributes layerobject, startPointX, startPointY, endPointX, endPointY
 
