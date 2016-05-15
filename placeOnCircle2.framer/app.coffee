@@ -29,3 +29,6 @@ slider.max=360
 slider.on "change:value", ->
 	# 	layer object, center X of circle, circle Y of center , angle, radiusX, radiusY
 	arcMovement.placeOnElipse layerA, layerB.midX, layerB.midY, this.value, 100, 100
+
+
+

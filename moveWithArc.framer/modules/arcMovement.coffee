@@ -22,5 +22,10 @@ exports.moveWithArc=(layer, startPointX, startPointY, endPointX, endPointY)->
 		arc proxy.x/4, layer, startPointX, startPointY, endPointX, endPointY
 
 exports.placeOnElipse=(layer, centerX, centerY, angle, radiusX, radiusY)->
-		layer.midX=centerX-Math.sin((angle+180)  * Math.PI / 180)*radiusX
-		layer.midY=centerY-Math.cos((angle+180)  * Math.PI / 180)*radiusY
+	layer.midX=centerX-Math.sin((angle+180)  * Math.PI / 180)*radiusX
+	layer.midY=centerY-Math.cos((angle+180)  * Math.PI / 180)*radiusY
+
+exports.circlePoint=(centerX, centerY, angle, radiusX, radiusY)->
+		x=centerX-Math.sin((angle+180)  * Math.PI / 180)*radiusX
+		y=centerY-Math.cos((angle+180)  * Math.PI / 180)*radiusY
+		return x:x, y:y
