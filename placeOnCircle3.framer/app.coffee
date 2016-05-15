@@ -21,7 +21,7 @@ for i in [0...amount]
 			midY:circleCoord.y
 			scale:1
 			opacity:1
-		delay:0.1*i+5
+		delay:0.1*i
 		curve: "spring(150, 10, 0)"
 	
 
