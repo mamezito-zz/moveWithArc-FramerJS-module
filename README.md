@@ -20,7 +20,11 @@ arcMovement.moveWithArc layerA,  900, 900, 0.3
 
 function attributes layerobject, endPointX, endPointY, time
 
+you can run function without timing, default one is 0.2
 
+```
+arcMovement.moveWithArc layerA,  900, 900
+```
 
 3. You can get x.y position of the object on circle taking its radius
 

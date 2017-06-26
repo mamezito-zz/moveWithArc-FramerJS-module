@@ -3,7 +3,7 @@
 
 
 exports.moveWithArc=(layer,  endPointX, endPointY, time)->
-
+	time?="0.2"
 	layer.animate
 		x:endPointX
 		options:
@@ -14,6 +14,7 @@ exports.moveWithArc=(layer,  endPointX, endPointY, time)->
 		options:
 			curve: Bezier.easeOut
 			time: time
+	print layer,  endPointX, endPointY, time
 
 
 exports.placeOnElipse=(layer, centerX, centerY, angle, radiusX, radiusY)->
