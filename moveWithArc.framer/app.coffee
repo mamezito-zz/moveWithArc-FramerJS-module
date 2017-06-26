@@ -1,14 +1,9 @@
-arcMovement = require "arcMovement"
-{Pointer} = require 'Pointer'
-
-backgroundA = new BackgroundLayer
-	backgroundColor: "rgba(46,181,255,1)"
-
+arcMovement = require 'arcMovement'
 layerA = new Layer
 		borderRadius: 100
 		width: 50
 		height: 50
-		backgroundColor: "white"
+		backgroundColor: "red"
 
 
 layerA.center()
@@ -18,8 +13,5 @@ area = new Layer
 	height: Screen.height
 	backgroundColor: "null"		
 	
-area.on Events.Click, (event, layer) ->
-	pos = Pointer.screen event, layer
-	
-	#layerobject, startPointX, startPointY, endPointX, endPointY
-	arcMovement.moveWithArc layerA, layerA.x, layerA.y, pos.x, pos.y
+area.on Events.Click, (event, layer) ->	
+	arcMovement.moveWithArc layerA,  event.pageX, event.pageY, 0.3

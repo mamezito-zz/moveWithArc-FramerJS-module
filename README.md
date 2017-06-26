@@ -1,7 +1,7 @@
 # moveWithArc-FramerJS-module
 
-Module is alowing you to do 3 things 
-1. Place an object on elipse 
+Module is alowing you to do 3 things
+1. Place an object on elipse
 
 ```
 arcMovement.placeOnElipse layerA, 300, 300, 90, 100, 100
@@ -15,10 +15,10 @@ https://www.google.com/design/spec/motion/material-motion.html
 
 
 ```
-arcMovement.moveWithArc layerA, 100, 200, 900, 900
+arcMovement.moveWithArc layerA,  900, 900, 0.3
 ```
 
-function attributes layerobject, startPointX, startPointY, endPointX, endPointY
+function attributes layerobject, endPointX, endPointY, time
 
 
 
@@ -35,7 +35,7 @@ function attributes -  center X of circle, circle Y of center , angle, radiusX, 
 framer examples:
 
 ![moving along the arc](https://github.com/mamezito/moveWithArc-FramerJS-module/blob/master/images/arcMovement.gif)
-http://share.framerjs.com/7nj9fvk5nybq/
+https://framer.cloud/AThCD
 
 ![placing object on elipse](https://github.com/mamezito/moveWithArc-FramerJS-module/blob/master/images/circle1.png)
 http://share.framerjs.com/s1x57kfq10za/
